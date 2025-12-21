@@ -1,9 +1,10 @@
 "use client"
 
+
 import { motion } from "framer-motion"
 import { CheckCircle2, ArrowRight } from "lucide-react"
 
-export const CurriculumSection = () => {
+export function CurriculumSection() {
   const modules = [
     {
       number: "01",

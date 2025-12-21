@@ -1,10 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Zap, ArrowRight, Play } from "lucide-react"
-import Image from "next/image"
+import { ArrowRight, Play, Zap } from "lucide-react"
 
-export const HeroSection = () => {
+export function HeroSection() {
   return (
     <section className="pt-32 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -14,7 +13,7 @@ export const HeroSection = () => {
             <div className="inline-flex items-center gap-2 bg-[#00f2ff]/10 border border-[#00f2ff]/20 px-4 py-2 rounded-full mb-8">
               <Zap size={16} className="text-[#00f2ff]" />
               <span className="text-xs font-bold uppercase tracking-widest text-[#00f2ff]">
-                Inscrições Abertas 2026
+                Inscrições Abertas 2025
               </span>
             </div>
 
@@ -32,15 +31,10 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a
-                href="https://pay.kiwify.com.br/GYd59p0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group px-8 py-4 bg-[#00f2ff] text-[#02040a] font-bold rounded-lg hover:bg-[#00d4e6] transition-all flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(0,242,255,0.3)]"
-              >
+              <button className="group px-8 py-4 bg-[#00f2ff] text-[#02040a] font-bold rounded-lg hover:bg-[#00d4e6] transition-all flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(0,242,255,0.3)]">
                 COMEÇAR AGORA
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+              </button>
 
               <button className="group px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-lg hover:border-[#00f2ff] hover:bg-[#00f2ff]/10 transition-all flex items-center justify-center gap-3">
                 <Play size={18} />
@@ -63,6 +57,7 @@ export const HeroSection = () => {
             </div>
           </motion.div>
 
+          {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -70,18 +65,21 @@ export const HeroSection = () => {
             className="relative"
           >
             <div className="relative aspect-[3/4] max-w-md mx-auto">
+              {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-b from-[#00f2ff]/20 via-transparent to-transparent rounded-3xl blur-3xl"></div>
 
+              {/* Image Container */}
               <div className="relative h-full rounded-3xl overflow-hidden bg-gradient-to-b from-[#0a1520] to-[#02040a]">
-                <Image
+                <img
                   src="/images/whatsapp-image-2025-12-18-at-21.png"
-                  alt="Instrutor Giliade Paulino"
-                  fill
-                  className="object-contain object-bottom"
+                  alt="Instrutor Profissional"
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[90%] w-auto object-contain object-bottom"
                 />
+                {/* Natural Fade */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#02040a] via-transparent to-transparent"></div>
               </div>
 
+              {/* Decorative Elements */}
               <div className="absolute -bottom-4 -right-4 w-32 h-32 border-4 border-[#00f2ff]/20 rounded-full"></div>
               <div className="absolute top-10 -left-4 w-4 h-4 bg-[#00f2ff] rounded-full animate-pulse"></div>
             </div>

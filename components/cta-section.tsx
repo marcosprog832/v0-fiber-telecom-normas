@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
-export const CTASection = () => {
+export function CTASection() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
@@ -21,15 +21,10 @@ export const CTASection = () => {
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
               Junte-se a centenas de profissionais que já dominam as normas da fibra óptica
             </p>
-            <a
-              href="https://pay.kiwify.com.br/GYd59p0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group px-10 py-5 bg-[#00f2ff] text-[#02040a] font-bold text-lg rounded-lg hover:bg-[#00d4e6] transition-all inline-flex items-center gap-3 shadow-[0_0_40px_rgba(0,242,255,0.4)]"
-            >
+            <button className="group px-10 py-5 bg-[#00f2ff] text-[#02040a] font-bold text-lg rounded-lg hover:bg-[#00d4e6] transition-all inline-flex items-center gap-3 shadow-[0_0_40px_rgba(0,242,255,0.4)]">
               GARANTIR MINHA VAGA
               <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
           </div>
         </motion.div>
       </div>

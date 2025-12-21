@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo } from "react"
+import { useEffect, useState } from "react"
 
 type Snake = {
   d: string
@@ -32,21 +32,27 @@ function generatePath(): string {
 }
 
 export function NeonSnakes() {
-  const snakes = useMemo(
-    () =>
-      Array.from({ length: 20 }).map(() => {
-        const duration = Math.random() * 20 + 18
-        return {
-          d: generatePath(),
-          duration,
-          offset: Math.random() * duration * -1,
-        }
-      }),
-    [],
-  )
+  const [snakes, setSnakes] = useState<Snake[]>([])
+
+  // ✅ Geração apenas no cliente
+  useEffect(() => {
+    const generated = Array.from({ length: 20 }).map(() => {
+      const duration = Math.random() * 20 + 18
+      return {
+        d: generatePath(),
+        duration,
+        offset: Math.random() * duration * -1,
+      }
+    })
+    setSnakes(generated)
+  }, [])
 
   return (
-    <svg className="fixed inset-0 z-0 pointer-events-none" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+    <svg
+      className="fixed inset-0 z-0 pointer-events-none"
+      viewBox="0 0 1000 1000"
+      preserveAspectRatio="none"
+    >
       <defs>
         <linearGradient id="snakeGradient" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#00f2ff" stopOpacity="0" />

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Users, Award, BookOpen, Globe } from "lucide-react"
 
-export const StatsSection = () => {
+export function StatsSection() {
   const stats = [
     { icon: <Users size={32} />, value: "+500", label: "Profissionais Certificados" },
     { icon: <Award size={32} />, value: "98%", label: "Taxa de Aprovação" },

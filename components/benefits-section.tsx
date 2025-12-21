@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Shield, Target, BookOpen, Users, Calendar, TrendingUp } from "lucide-react"
 
-export const BenefitsSection = () => {
+export function BenefitsSection() {
   const benefits = [
     {
       icon: <Shield size={40} />,
