@@ -13,7 +13,7 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-2 bg-[#00f2ff]/10 border border-[#00f2ff]/20 px-4 py-2 rounded-full mb-8">
               <Zap size={16} className="text-[#00f2ff]" />
               <span className="text-xs font-bold uppercase tracking-widest text-[#00f2ff]">
-                Inscrições Abertas 2025
+                Inscrições Abertas 2026
               </span>
             </div>
 
@@ -31,16 +31,17 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button className="group px-8 py-4 bg-[#00f2ff] text-[#02040a] font-bold rounded-lg hover:bg-[#00d4e6] transition-all flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(0,242,255,0.3)]">
-                COMEÇAR AGORA
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+      <a
+        href="https://pay.kiwify.com.br/pC68vFi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group px-8 py-4 bg-[#00f2ff] text-[#02040a] font-bold rounded-lg hover:bg-[#00d4e6] transition-all flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(0,242,255,0.3)]"
+      >
+        COMEÇAR AGORA
+        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+      </a>
+    </div>
 
-              <button className="group px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-lg hover:border-[#00f2ff] hover:bg-[#00f2ff]/10 transition-all flex items-center justify-center gap-3">
-                <Play size={18} />
-                VER CRONOGRAMA
-              </button>
-            </div>
 
             {/* Stats Row */}
             <div className="grid grid-cols-3 gap-6">

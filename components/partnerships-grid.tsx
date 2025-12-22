@@ -48,7 +48,7 @@ export const PartnershipsGrid = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-black uppercase text-white mb-4">Parcerias Fechadas 2025</h2>
+          <h2 className="text-3xl md:text-5xl font-black uppercase text-white mb-4">Parcerias Fechadas 2026</h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Empresas que confiam em nossa audiência técnica e especializada
           </p>
@@ -113,7 +113,7 @@ export const PartnershipsGrid = () => {
                 <div className="absolute top-4 right-4">
                   <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#00f2ff]/10 border border-[#00f2ff]/30 text-[#00f2ff] text-xs font-bold uppercase">
                     <span className="w-2 h-2 rounded-full bg-[#00f2ff] animate-pulse" />
-                    Parceiro 2025
+                    Parceiro 2026
                   </span>
                 </div>
               ) : (

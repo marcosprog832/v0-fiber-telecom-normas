@@ -38,6 +38,7 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-10 text-[10px] font-black uppercase tracking-[0.25em] text-gray-400">
           {[
             { label: "Início", href: "/" },
+            { label: "Consultoria Empresarial", href: "/consultoria" },
             { label: "Cursos", href: "/cursos" },
             { label: "O Instrutor", href: "/instrutor" },
             { label: "Parcerias", href: "/parcerias" },
@@ -79,6 +80,7 @@ export const Navbar = () => {
             <div className="px-6 py-6 space-y-4">
               {[
                 { label: "Início", href: "/" },
+                { label: "Consultoria Empresarial", href: "/consultoria" },
                 { label: "Cursos", href: "/cursos" },
                 { label: "O Instrutor", href: "/instrutor" },
                 { label: "Parcerias", href: "/parcerias" },
