@@ -1,7 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Instagram, Linkedin, Youtube } from "lucide-react"
+import { Instagram, Linkedin, Youtube, } from "lucide-react"
+import { FaTiktok } from "react-icons/fa"
+
 
 export function SocialMediaStats() {
   const socialNetworks = [
@@ -41,21 +43,21 @@ export function SocialMediaStats() {
       ],
     },
     {
-      name: "YouTube",
-      handle: "Telecom Normas",
-      icon: Youtube,
-      color: "#FF0000",
-      link: "https://youtube.com/@telecomnormas",
-      stats: [
-        { label: "Inscritos", value: "11,3k" },
-        { label: "Visualizações", value: "114,5k" },
-        { label: "Engajamento", value: "46,5k" },
-      ],
-      demographics: [
-        { label: "Faixa etária 25-34", value: "46,1%" },
-        { label: "Faixa etária 35-44", value: "31,1%" },
-      ],
-    },
+  name: "TikTok",
+  handle: "Telecom Normas",
+  icon: FaTiktok, // ✅ agora está correto
+  color: "#000000", // ou gradiente se quiser estilizar
+  link: "https://www.tiktok.com/@telecomnormas",
+  stats: [
+    { label: "Seguidores", value: "11,3k" },
+    { label: "Visualizações", value: "114,5k" },
+    { label: "Curtidas", value: "46,5k" },
+  ],
+  demographics: [
+    { label: "Faixa etária 25-34", value: "46,1%" },
+    { label: "Faixa etária 35-44", value: "31,1%" },
+  ],
+}
   ]
 
   return (
