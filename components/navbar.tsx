@@ -49,13 +49,18 @@ export const Navbar = () => {
           ))}
 
           {/* CTA Área do Aluno */}
-          <button className="group relative flex items-center gap-2 px-6 py-2.5 rounded-full font-black text-white border border-white/10 bg-white/5 overflow-hidden transition-all duration-300 hover:text-black">
-            <div className="absolute inset-0 bg-[#00f2ff] translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            <span className="relative z-10 flex items-center gap-2">
-              <User size={14} />
-              ÁREA DO ALUNO
-            </span>
-          </button>
+          <a
+  href="https://dashboard.kiwify.com/login?lang=pt"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative flex items-center gap-2 px-6 py-2.5 rounded-full font-black text-white border border-white/10 bg-white/5 overflow-hidden transition-all duration-300 hover:text-black"
+>
+  <div className="absolute inset-0 bg-[#00f2ff] translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+  <span className="relative z-10 flex items-center gap-2">
+    <User size={14} />
+    ÁREA DO ALUNO
+  </span>
+</a>
         </div>
 
         {/* Mobile Menu Button */}

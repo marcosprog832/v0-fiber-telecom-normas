@@ -21,10 +21,15 @@ export function CTASection() {
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
               Junte-se a centenas de profissionais que já dominam as normas da fibra óptica
             </p>
-            <button className="group px-10 py-5 bg-[#00f2ff] text-[#02040a] font-bold text-lg rounded-lg hover:bg-[#00d4e6] transition-all inline-flex items-center gap-3 shadow-[0_0_40px_rgba(0,242,255,0.4)]">
-              GARANTIR MINHA VAGA
-              <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            <a
+  href="https://pay.kiwify.com.br/GYd59p0"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group px-10 py-5 bg-[#00f2ff] text-[#02040a] font-bold text-lg rounded-lg hover:bg-[#00d4e6] transition-all inline-flex items-center gap-3 shadow-[0_0_40px_rgba(0,242,255,0.4)]"
+>
+  GARANTIR MINHA VAGA
+  <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+</a>
           </div>
         </motion.div>
       </div>
