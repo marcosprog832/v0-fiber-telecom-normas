@@ -99,10 +99,15 @@ export const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <button className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-black text-sm uppercase bg-[#00f2ff] text-black">
-                <User size={16} />
-                ÁREA DO ALUNO
-              </button>
+             <a
+  href="https://dashboard.kiwify.com/login?lang=pt"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-black text-sm uppercase bg-[#00f2ff] text-black"
+>
+  <User size={16} />
+  ÁREA DO ALUNO
+</a>
             </div>
           </motion.div>
         )}
