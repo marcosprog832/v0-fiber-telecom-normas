@@ -14,7 +14,7 @@ export function ConsultoriaHero() {
           transition={{ duration: 1 }}
           className="text-4xl md:text-6xl font-black uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#00f2ff] to-[#0099ff]"
         >
-          Aguarde, estamos construindo o melhor da consultoria em fibra
+          Aguarde, estamos construindo o melhor da consultoria em telecomunicações
         </motion.h1>
 
         <motion.p
