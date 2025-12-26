@@ -21,7 +21,7 @@ export function HeroSection() {
               DOMINE AS NORMAS DA
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f2ff] to-[#0099ff]">
-                FIBRA ÓPTICA
+                TELECOMUNICAÇÃO
               </span>
             </h1>
 
