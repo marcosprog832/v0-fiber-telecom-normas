@@ -9,7 +9,7 @@ export function PromoPopup() {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    // Agora configurado para 5 segundos (5000ms)
+    // Configurado para 3 segundos (3000ms)
     const timer = setTimeout(() => {
       setIsOpen(true)
     }, 3000)
@@ -35,7 +35,8 @@ export function PromoPopup() {
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.5, opacity: 0 }}
-            className="relative bg-[#0a0a0a] border-2 border-[#00f2ff] w-full max-w-4xl rounded-3xl overflow-hidden shadow-[0_0_80px_rgba(0,242,255,0.2)] flex flex-col md:flex-row"
+            // ATUALIZAÇÃO: Aumentei para max-w-5xl e adicionei altura mínima de 500px
+            className="relative bg-[#0a0a0a] border-2 border-[#00f2ff] w-full max-w-5xl rounded-3xl overflow-hidden shadow-[0_0_80px_rgba(0,242,255,0.2)] flex flex-col md:flex-row md:min-h-[500px]"
           >
             {/* Botão de Fechar */}
             <button
@@ -46,15 +47,16 @@ export function PromoPopup() {
             </button>
 
             {/* Lado Esquerdo: Imagem */}
-            <div className="relative w-full h-64 md:h-auto md:w-1/2 bg-slate-900 border-b md:border-b-0 md:border-r border-slate-800">
+            <div className="relative w-full h-64 md:h-auto md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-800">
               <Image
-                src="/images/otdr_raiz.jpeg" // Confirme se sua imagem está nessa pasta dentro de 'public'
+                src="/images/otdr_raiz.jpeg" 
                 alt="Curso OTDR Raiz"
                 fill
-                className="object-cover"
+                // ATUALIZAÇÃO: object-contain garante que a imagem não seja cortada
+                className="object-contain bg-black"
               />
-              {/* Sombra interna para integrar a imagem */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
+              {/* Sombra interna leve */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
             </div>
 
             {/* Lado Direito: Conteúdo */}
