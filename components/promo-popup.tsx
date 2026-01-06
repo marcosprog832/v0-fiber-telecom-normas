@@ -49,7 +49,7 @@ export function PromoPopup() {
             {/* Lado Esquerdo: Imagem */}
             <div className="relative w-full h-64 md:h-auto md:w-1/2 bg-black border-b md:border-b-0 md:border-r border-slate-800">
               <Image
-                src="/images/otdr_raiz.jpeg" 
+                src="/images/otdr_raiz2.jpeg" 
                 alt="Curso OTDR Raiz"
                 fill
                 // ATUALIZAÇÃO: object-contain garante que a imagem não seja cortada
