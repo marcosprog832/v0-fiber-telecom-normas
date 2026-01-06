@@ -47,7 +47,7 @@ export default function CursosPage() {
       title: "OTDR RAIZ",
       description:
         "Curso especializado em medição com OTDR. Aprenda a interpretar eventos, analisar atenuações, identificar falhas e gerar relatórios profissionais de certificação de redes.",
-      image: "/fiber-optic-testing-otdr-equipment.jpg",
+      image: "/images/otdr_raiz.jpeg",
       duration: "8h",
       students: 480,
       modules: 8,
