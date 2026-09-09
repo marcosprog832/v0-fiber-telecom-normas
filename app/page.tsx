@@ -9,12 +9,10 @@ import { CurriculumSection } from "@/components/curriculum-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
-import { PromoPopup } from "@/components/promo-popup"
 
 export default function Page() {
   return (
     <div className="relative min-h-screen bg-[#02040a] text-white overflow-x-hidden">
-      <PromoPopup />
       <NeonSnakes />
       <Navbar />
 

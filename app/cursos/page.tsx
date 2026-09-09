@@ -13,7 +13,7 @@ export default function CursosPage() {
       title: "GPON 360 – Do Planejamento à Implantação Completa",
       description:
         "Domine todas as etapas de um projeto GPON, desde o planejamento inicial até a implantação completa. Aprenda dimensionamento, equipamentos OLT/ONU, splitters e configurações avançadas.",
-      image: "/fiber-optic-cables-and-equipment.jpg",
+      image: "/images/gpon360.jpeg",
       duration: "12h",
       students: 500,
       modules: 10,
@@ -30,7 +30,7 @@ export default function CursosPage() {
       title: "Telecom Club",
       description:
         "Clube exclusivo com conteúdo contínuo sobre telecomunicações. Acesso a aulas mensais, materiais técnicos, discussões com especialistas e networking profissional.",
-      image: "/fiber-optic-cable-installation-infrastructure.jpg",
+      image: "/images/club.jpeg",
       duration: "Acesso contínuo",
       students: 450,
       modules: 12,
